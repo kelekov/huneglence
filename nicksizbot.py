@@ -34,7 +34,7 @@ ttskey = u""
 TOKEN = ""
 
 def start(bot, update):
-    update.message.reply_text('Merhaba!')
+    update.message.reply_text('Merhaba Hun Eğlence botuna hoşgeldin')
 
 # Botta oluşan sorunları ekrana çıktılar
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',level=logging.INFO)
@@ -53,7 +53,7 @@ langlist = ["az","sq","am","en","ar","hy","af","eu","ba","be","bn",
 "ur","fi","fr","hi","hr","cs","sv","gd","et","eo","jv","ja"]
 
 # Şaplak atma özelliği için gösterilecek mesajlar listesi
-slaplist = [u"{}, {} üzerine tüplü TV fırlattı!", u"{}, {}'ye osmanlı tokadı attı!",
+slaplist = [u"{}, {} üzerine Sandelye fırlattı!", u"{}, {}'ye Osmanlı tokadı attı!",
 u"{}, {} üzerine benzin döktü ve ateşe verdi!", u"{}, {} üzerine iPhone3GS fırlattı!",
 u"{}, {}'nin RTX 2080Ti'sini kırdı!",u"{}, {}'nin kalbini kırdı!", 
 u"{}, {} üzerine kahve döktü!", u"{}, {}'nin yüzüne pasta fırlattı!",
@@ -89,7 +89,7 @@ def conv(bot, update):
 					return
 			cmd=cmd[1:].lower()
 			if "hello" == cmd:
-				res = "Merhaba dünya!"
+				res = "selam dünya ben Massaka"
 			elif "link" == cmd:
 				res = u"Grup linki: "
 				if bool(update.message.chat.username):
